@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>미세먼지</title>
+	<link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<style>
+	#sky{position: absolute; margin: auto; left: -1px; top: 0px;
+		animation: arrow 2s forwards;}
+		#sky2{display:none; position: absolute; top: 0px; left: 0px;}
+	#ground{position: absolute; left : -1px; top: 356.2px;
+		animation: arrow 2s forwards;}
+		#ground2{display:none; position: absolute; top: 0px; left: 0px;}
+	#factory1{position: absolute; margin: auto; left: 0px; top: 174px;
+		animation: intro 2s forwards;}
+		#factory11{display:none; position: absolute; top: 0px; left: 0px;}
+	#factory2{position: absolute; margin: auto; left: 408px; top: 50px;
+		animation: intro 3s forwards;}
+		#factory22{display:none; position: absolute; top: 0px; left: 0px;}
+	#factory3{position: absolute; margin: auto; left: 1035px; top: 209px;
+		animation: intro 4s forwards;}
+		#factory33{display:none; position: absolute; top: 0px; left: 0px;}
+	#road{position: absolute; margin: auto; left: 387px; top: 500px;
+		animation: intro 5s forwards;}
+		#road2{display:none; position: absolute; top: 0px; left: 0px;}
+	#car1{position: absolute; margin: auto; left: 610px; top: 572px;
+		animation: intro 6s forwards;}
+		#car11{display:none; position: absolute; top: 0px; left: 0px;}
+	#car2{position: absolute; margin: auto; left: 747px; top: 476px;
+		animation: intro 7s forwards;}
+		#car22{display:none; position: absolute; top: 0px; left: 0px;}
+	#arrows{position: absolute; margin: auto; left: 860px; top: 530px;
+		animation: intro 8s forwards;}
+
+	#title{position: absolute; margin : auto; width: 300px; height: 200px; left: 50px; top: 10px;}
+	#last{position: absolute; margin : auto; width: 1535px; height: 719px; left: 0px; top: -70px;
+			animation:intro 3s forwards; animation-play-state: paused;}
+
+
+	h1.a{font-family: 'Cinzel', serif; font-size: 30px; color: white; position: absolute;
+		animation:  title 10s forwards;}
+
+	h2.a{font-family: 'Cormorant Garamond', serif; font-size: 102.5px; color: red; position: absolute;}
+
+	@keyframes intro{
+			0%{opacity:0;}
+			50%{opacity: 0;}
+			100%{opacity: 1;}}
+	@keyframes arrow{
+			0%{opacity: 0;}
+			100%{opacity: 1;}}
+
+	@keyframes title{
+			0%{opacity: 0;}
+			40%{opacity: 1;}
+			80%{opacity: 1;}
+			100%{opacity: 0;}}
+
+
+	</style>
+</head>
+<body>
+
+	<img src="sky.png" id="sky">
+	<img src="하늘.gif" id="sky2">
+
+	<img src="ground.png" id="ground">
+	<img src="땅.gif" id="ground2">
+
+	<div id="last">
+		<h2 class="a">
+	Human beings wanted to live a better life. And the industrial revolution has improved the quality of life.<br>
+	Ironically, We want to live <br>but we are dying.</h2>
+	</div>
+
+	<div id="title">
+		<h1 class="a">Please get out<br>FINE DUST</h1>
+	</div>
+
+	<img src="road.png" id="road">
+	<img src="도로.gif" id="road2">
+
+	<img src="factory2.png" id="factory2">
+	<img src="공장2.gif" id="factory22">
+
+	<img src="factory3.png" id="factory3">
+	<img src="공장3.gif" id="factory33">
+
+	<img src="factory1.png" id="factory1">
+	<img src="공장1.gif" id="factory11">
+
+	<img src="car1.png" id="car1">
+	<img src="차1.gif" id="car11">
+
+	<img src="car2.png" id="car2">
+	<img src="차2.gif" id="car22">
+
+	<img src="화살표.gif" id="arrows">
+
+
+
+	<script type="text/javascript">
+		road.onclick = function(){
+			road2.style.display = "block";
+			road.style.display = "none";
+			arrows.style.left = "722px";
+			arrows.style.top = "-20px";
+		}
+
+		factory2.onclick = function(){
+			factory22.style.display = "block";
+			factory2.style.display = "none";
+			arrows.style.left = "1280px";
+			arrows.style.top = "130px";
+		}
+
+		factory3.onclick = function(){
+			factory33.style.display = "block";
+			factory3.style.display = "none";
+			arrows.style.left = "350px";
+			arrows.style.top = "190px";
+		}
+
+		factory1.onclick = function(){
+			factory11.style.display = "block";
+			factory1.style.display = "none";
+			arrows.style.left = "640px";
+			arrows.style.top = "490px";
+		}
+
+		car1.onclick = function(){
+			car11.style.display = "block";
+			car1.style.display = "none";
+			arrows.style.left = "760px";
+			arrows.style.top = "400px";
+
+
+		}
+
+		car2.onclick = function(){
+			car22.style.display = "block";
+			car2.style.display = "none";
+			arrows.style.top = "-100px";
+			last.style.animationPlayState = "running";
+		}
+
+	</script>
+
+
+</body>
+</html>
